@@ -1,0 +1,230 @@
+.app {
+    background-color: #0F121B;
+    font-family: var(--font-base);
+  }
+  
+  .app__whitebg {
+    background-color: #0F121B;
+  }
+  
+  .app__primarybg {
+    background-color: #0F121B;
+  }
+  
+  .app__container {
+    width: 100%;
+    min-height: 100vh;
+  
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .app__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app__wrapper {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  
+    @media screen and (max-width: 450px) {
+      padding: 0;
+    }
+  }
+
+  
+  .head-text {
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    color: #BAB9C6;
+    text-transform: capitalize;
+  
+    span {
+      color: var(--secondary-color);
+    }
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
+  }
+  
+  .p-text {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--gray-color);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+  }
+  
+  .bold-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--black-color);
+    text-align: left;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .app__social {
+    position: fixed;
+    left: 2rem;
+    bottom: 7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+    z-index: 100;
+  
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #BAB9C6;
+      margin: 0.5rem 0;
+      border: 1px solid var(--lightGray-color);
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      transition: all 0.3s ease-in-out;
+  
+      a {
+        text-decoration: none;
+      }
+
+      svg {
+        width: 22px;
+        height: 22px;
+        color: var(--gray-color);
+        opacity: 0.8;
+        transition: all 0.3s ease;
+      }
+  
+      &:hover {
+        svg {
+          color: var(--white-color);
+          /* background-color: var(--secondary-color); */
+          border-color: var(--secondary-color);
+          opacity: 1;
+          /* transform: scale(1.1); */
+        }
+      }
+
+      &.linkedin:hover {
+        background: white;
+        svg {
+          color: #0a66c2; /* Azul LinkedIn */
+          transform: scale(1.2);
+        }
+      }
+  
+      &.github:hover {
+        background: white;
+        svg {
+          color: #333333; /* Cor padrão do GitHub */
+          transform: scale(1.4);
+        }
+      }
+  
+      &.facebook:hover {
+        background: #1877f2;
+        svg {
+          color: white; /* Azul Facebook */
+          transform: scale(1.2);
+        }
+      }
+  
+      &.instagram:hover {
+        background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); /* Degradê Instagram */
+        svg {
+          color: white;
+          transform: scale(1.2);
+        }
+      }
+  
+      &.whatsapp:hover {
+        background: #19ca5a;
+        svg {
+          color: white;
+          transform: scale(1.2);
+        }
+      }
+  
+      @media screen and (min-width: 2000px) {
+        width: 70px;
+        height: 70px;
+  
+        margin: 0.5rem 0;
+  
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  
+  .app__navigation {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 1rem;
+  
+    .app__navigation-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #cbcbcb;
+      margin: 0.5rem;
+      z-index: 100;
+      transition: background-color 0.2s ease-in-out;
+  
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+  
+      @media screen and (min-width: 2000px) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .app__navigation,
+    .app__social {
+      display: none;
+    }
+  
+    .copyright {
+      padding: 2rem;
+    }
+  }

@@ -1,0 +1,6 @@
+<svg width="500" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Main company name "SINIER", centered horizontally with reduced line spacing -->
+  <text x="250" y="80" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="300" text-anchor="middle" fill="#BAB9C6">SINIER</text>
+  <!-- Secondary tagline "Dev Tech", centered horizontally with closer line spacing -->
+  <text x="250" y="110" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="200" text-anchor="middle" fill="#BAB9C6">Dev Tech</text>
+</svg>

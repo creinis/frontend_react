@@ -1,0 +1,20 @@
+<svg width="500" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definindo o gradiente -->
+  <defs>
+    <linearGradient id="gradienteLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <!-- <stop offset="0%" stop-color="#BDC6D2" stop-opacity="0.5" /> --> <!-- Azul claro com transparência -->
+      <!-- <stop offset="30%" stop-color="#313BAC" stop-opacity="1" /> -->  <!-- Cor intermediária -->
+      <stop offset="100%" stop-color="#313BAC" stop-opacity="1" /> <!-- Cor navy -->
+    </linearGradient>
+  </defs>
+
+  <!-- Nome da empresa "SINIER" com gradiente -->
+  <text x="250" y="80" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="300" text-anchor="middle" fill="url(#gradienteLogo)">
+    SINIER
+  </text>
+
+  <!-- Tagline secundária "Dev Tech" com o mesmo gradiente -->
+  <text x="250" y="110" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="200" text-anchor="middle" fill="url(#gradienteLogo)">
+    Dev Tech
+  </text>
+</svg>
